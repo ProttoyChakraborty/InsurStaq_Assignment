@@ -1,0 +1,132 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.button-container{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.button{
+  width: 15vw;
+  border-radius: 20%;
+  padding: 1.2rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  border: 3px solid black;
+  font-size: 32px;
+  transition: 3ms ease-in-out;
+}
+.button:hover{
+  background-color: rgba(128, 128, 128, 0.413);
+}
+
+/* Users  */
+
+#upload-from{
+  display: flex;
+  justify-content: space-between;
+}
+.AddNewPDF{
+  border-radius:10%;
+  padding: 2rem;
+  width: 70%;
+  margin:auto;
+  margin-top: 3rem;
+  border: 2px solid gray;
+}
+.center{
+  width: 100%;
+  margin:auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.submit-button{
+  border-radius: 10%;
+  padding: 0.3rem;
+  margin-right:1.5rem;
+  background-color: rgba(16, 67, 103, 0.677);
+  color: white;
+}
+
+.head{
+  padding:1rem;
+  font-size: 30px;
+  font-weight: 800
+}
+.DocumentList{
+  width: 90%;
+  margin: auto;
+}
+.file-desc{
+  padding: 0.5rem;
+  background-color: rgba(16, 67, 103, 0.677);
+  color: white;
+  border-radius: 10px;
+  margin: 2rem;
+  font-size: 20px;
+}
+.unverified{
+  color: red;
+  padding:0.3rem;
+  background-color: pink;
+  border-radius: 10px;
+}
+
+.verified{
+  color: green;
+  padding:0.3rem;
+  background-color: lightgreen;
+  border-radius: 10%;
+}
+
+.verify-layout{
+  display: flex;
+  flex-direction: row;
+}
+
+.view{
+  flex:3
+}
+
+.comment{
+  padding:1rem;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  font-size: 30  px;
+  font-weight:600 ;
+}
+
+label{
+  margin: 1rem;
+}
+input{
+  width: 30px;
+}
+
+#comment{
+-webkit-box-shadow: 10px 20px 33px -7px rgba(0,0,0,0.75);
+-moz-box-shadow: 10px 20px 33px -7px rgba(0,0,0,0.75);
+box-shadow: 10px 20px 33px -7px rgba(0,0,0,0.75);
+margin:0.5rem
+}
